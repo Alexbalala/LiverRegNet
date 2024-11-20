@@ -17,30 +17,18 @@ Liver registration between ultrasound (US) and computed tomography (CT) is criti
 
 The dataset includes:
 
-1. **3D Ultrasound (US) Volumes**: High-quality, segmented US images with corresponding labels.
-2. **3D Computed Tomography (CT) Volumes**: Paired CT images with liver segmentation ground truth.
+1. **3D Ultrasound (US) Volumes**
+2. **3D Computed Tomography (CT) Volumes**
 
 ### Data Format
 
 - **US Data**: Provided in NIfTI (.nii) format.
 - **CT Data**: Provided in NIfTI (.nii) format.
-- **Annotations**: Liver segmentations are included as binary masks.
+- **label**: All data are registered in pairs, and you can transform them freely. The transformation matrix is ​​your label.
 
 ### Access
 
-Please [request access](mailto:your-email@example.com) to download the dataset.
-
----
-
-## Code
-
-This repository provides the implementation of our proposed registration pipeline:
-
-1. **Preprocessing**: Normalization, cropping, and resampling of US and CT data.
-2. **Model Fusion Registration**:
-   - **Deep Learning Component**: Pre-trained feature extraction for initial alignment.
-   - **Optimization Component**: Fine-tuning registration using similarity measures (e.g., mutual information).
-3. **Evaluation Metrics**: Dice Similarity Coefficient (DSC), Hausdorff Distance, etc.
+Please [request access](mailto:yw.xu1@siat.ac.cn) to download the dataset.
 
 ---
 
